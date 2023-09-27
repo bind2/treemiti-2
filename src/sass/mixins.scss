@@ -1,0 +1,128 @@
+@mixin otherCoursesStyle {
+    &>.other-courses {
+        // border: 1px solid red;
+
+        &>h3 {
+            text-align: center;
+            margin: 2rem 0;
+            color: $primary-color;
+            font-family: $secondary-font;
+            font-weight: 400;
+            font-size: 2.5rem;
+        }
+
+        &>div {
+            // border: 1px solid red;
+            padding: 1.5rem;
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            gap: 3rem;
+
+            @include largeLaptop {
+                grid-template-columns: repeat(4, 1fr);
+            }
+
+            @include tablet {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 2rem;
+            }
+
+            @include largeMobile {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 2rem;
+            }
+
+            &>.course-cart {
+                // border: 1px solid red;
+                border-radius: 0 0 1rem 1rem;
+                padding: 1rem 1rem;
+                background-color: $light-gray;
+                transition: .3s;
+
+                &>a {
+
+                    // border: 1px solid red;
+                    &>figure {
+                        // border: 1px solid red;
+                        width: 9rem;
+                        height: 9rem;
+                    }
+
+                    &>h3 {
+                        // border: 1px solid red;
+                        font-size: 1.5rem;
+                        text-align: center;
+                        font-weight: 400;
+                    }
+                }
+
+                &:hover {
+                    background-color: $primary-color;
+
+                    &>a {
+                        &>h3 {
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@mixin feedbackCart {
+    // border: 1px solid $secondary-color;
+    background-color: $light-gray;
+    width: 30rem;
+    flex: 1 1 auto;
+    margin: 1.5rem;
+    padding: 2rem 1rem;
+
+    &>p {
+        // border: 1px solid red;
+        text-align: center;
+        margin-bottom: 2rem;
+        line-height: 2.4rem;
+        // font-weight: 300;
+    }
+
+    &>div {
+        // border: 1px solid blue;
+        display: flex;
+        align-items: center;
+        width: 25rem;
+        margin: 0 auto;
+
+        &>div:nth-child(1) {
+            // border: 1px solid red;
+            width: 6rem;
+            height: 6rem;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 1.4rem;
+
+            &>img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        &>div:nth-child(2) {
+            // border: 1px solid red;
+
+            &>p:nth-child(1) {
+                // border: 1px solid red;
+                font-size: 1.8rem;
+                // color: orange;
+                margin-bottom: .4rem;
+            }
+
+            &>p:nth-child(2) {
+                // border: 1px solid red;
+                font-size: 1.4rem;
+                font-weight: 300;
+            }
+        }
+    }
+}

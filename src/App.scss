@@ -1,0 +1,49 @@
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,500;6..12,600;6..12,700;6..12,800;6..12,900;6..12,1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;600;700&display=swap');
+
+
+// reset
+@import './sass/reset';
+
+
+// variables
+@import './sass/variables.scss';
+
+
+//mixins
+@import './sass/mixins.scss';
+
+
+// components
+@import './components/button/Button.scss';
+@import './components/cart-list/CartList.scss';
+@import './components/course-cart/CourseCart.scss';
+@import './components/course-features/CourseFeatures.scss';
+@import './components/slider-cart/Card.scss';
+@import './components/employe-feedback-cart/EmployeFeedbackCart.scss';
+@import './components/student-feedback-cart/StudentFeedbackCart.scss';
+
+
+// layout
+@import './layout/navbar/Navbar.scss';
+@import './layout/main/Main.scss';
+@import './layout/footer/Footer.scss';
+
+
+//sections
+@import './sections/header/Header.scss';
+@import './sections/courses/Courses.scss';
+@import './sections/about/About.scss';
+@import './sections/testimonials/Testimonials.scss';
+@import './sections/placements/Placements.scss';
+@import './sections/guidance/Guidance.scss';
+@import './sections/contact/Contact.scss';
+
+
+// internal pages
+@import './internal-pages/course-details/CourseDetails.scss';
+@import './internal-pages/student-support/StudentSupport.scss';
+@import './internal-pages/career-guidance/CareerGuidance.scss';
+@import './internal-pages/feedback/Feedback.scss';

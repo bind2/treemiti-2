@@ -1,0 +1,41 @@
+@import '../../sass/breakPoints.scss';
+
+.courses-section{
+    // border: 1px solid red;
+    &>#courses{
+        // border: 1px solid red;
+        padding: 3rem 0;
+
+        &>h2{
+            text-align: center;
+            color: $red;
+            font-size: 3.5rem;
+            font-weight: 400;
+            font-family: $primary-font;
+            // border: 1px solid red;
+
+            @include largeMobile{
+                font-size: 3rem;
+            }
+        }
+
+        &>.flex-container{
+            // border: 1px solid red;
+            margin-top: 1rem;
+            padding: 1.5rem;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 3rem;
+
+            @include laptop{
+                grid-template-columns: repeat(3, 1fr);
+            }
+            @include tablet{
+                grid-template-columns: repeat(2, 1fr);
+            }
+            @include largeMobile{
+                gap: 2rem; 
+            }
+        }
+    }
+}
